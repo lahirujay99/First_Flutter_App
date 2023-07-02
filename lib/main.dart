@@ -2,11 +2,20 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(
-    const MaterialApp(
+    MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.indigoAccent, //can also use Color()
-        body: Center(
-          child: Text("Hello World"),
+        body: Container(
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+              colors: [
+                Color.fromARGB(255, 143, 158, 241),
+                Color.fromARGB(255, 192, 224, 250)
+              ],
+            ),
+          ),
+          child: const Center(
+            child: Text("Hello World"),
+          ),
         ),
       ),
     ),
